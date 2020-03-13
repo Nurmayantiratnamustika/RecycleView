@@ -38,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
 		Intent intent = new Intent(MainActivity.this,LatihanActivity.class);
 		startActivity(intent);
 	}
+
+    public void handleFastAdapterButton(View view) {
+		Intent intent = new Intent(MainActivity.this,FastAdapterActivity.class);
+		startActivity(intent);
+    }
 }

@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LatihanActivity"></activity>
+        <activity android:name=".FastAdapterActivity"></activity>
+        <activity android:name=".LatihanActivity" />
         <activity android:name=".ViewTypeActivity" />
         <activity android:name=".GridActivity" />
         <activity android:name=".LogoActivity" />

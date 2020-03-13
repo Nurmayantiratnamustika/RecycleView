@@ -4,51 +4,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="4dp"
-    app:cardUseCompatPadding="true"
+    android:layout_height="200dp"
+    app:layout_editor_absoluteX="1dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardBackgroundColor="#f5f5f5"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout"
-        android:layout_width="170dp"
-        android:layout_height="150dp"
-        android:background="#686464">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/image_logo"
+            />
+
 
         <TextView
             android:id="@+id/berita"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
             android:text="Berita Apa"
-            android:textSize="20sp"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="10pt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:textColor="#FFFF"/>
+            android:textColor="#000"/>
 
-        <ImageView
-            android:id="@+id/image_logo"
-            android:layout_width="70dp"
-            android:layout_height="60dp"
-            android:layout_margin="8dp"
-
-            android:adjustViewBounds="true"
-
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="137dp"
-            tools:srcCompat="@tools:sample/avatars"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
             android:text="Nama Stasiun"
             android:id="@+id/stasiun"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toRightOf="@id/image_logo"
-            android:textColor="#FFFF"/>
+            app:layout_constraintStart_toEndOf="@id/image_logo"
+            android:textColor="#22b8fc"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
